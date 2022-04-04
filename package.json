@@ -51,10 +51,12 @@
   },
   "homepage": "https://github.com/AnubisLMS/PasteDetector#readme",
   "dependencies": {
-    "@types/node": "^17.0.23",
     "eslint": "^8.12.0",
     "typescript": "^4.6.3",
-    "vscode": "^1.1.37",
     "vscode-dts": "^0.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "vscode": "^1.1.37"
   }
 }
