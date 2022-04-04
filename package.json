@@ -3,14 +3,13 @@
   "displayName": "Paste Detector",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./out/extension.js",
   "engines": {
     "vscode": "^1.34.0"
   },
   "activationEvents": [
-  "*"
+    "*"
   ],
-  "main": "./out/extension.js",
   "contributes": {
     "commands": [
       {
@@ -36,13 +35,13 @@
     ]
   },
   "scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"lint": "eslint . --ext .ts,.tsx",
-		"watch": "tsc -watch -p ./",
-		"download-api": "vscode-dts dev",
-		"postdownload-api": "vscode-dts main",
-		"postinstall": "npm run download-api"
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "lint": "eslint . --ext .ts,.tsx",
+    "watch": "tsc -watch -p ./",
+    "download-api": "vscode-dts dev",
+    "postdownload-api": "vscode-dts main",
+    "postinstall": "npm run download-api"
   },
   "keywords": [],
   "author": "",
@@ -50,5 +49,12 @@
   "bugs": {
     "url": "https://github.com/AnubisLMS/PasteDetector/issues"
   },
-  "homepage": "https://github.com/AnubisLMS/PasteDetector#readme"
+  "homepage": "https://github.com/AnubisLMS/PasteDetector#readme",
+  "dependencies": {
+    "@types/node": "^17.0.23",
+    "eslint": "^8.12.0",
+    "typescript": "^4.6.3",
+    "vscode": "^1.1.37",
+    "vscode-dts": "^0.3.3"
+  }
 }
